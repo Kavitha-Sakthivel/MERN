@@ -1,13 +1,18 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import { FaGraduationCap } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { assets } from "../../asset";
+//import first from './assets/images/first.jpg';
+//import second from './assets/images/bachelor-of-science.jpg';
+//import third from './assets/images/mads-umich.jpg';
+//import fourth from './assets/images/other.jpg';
+
 const Card = ({ course, title, category, description, _id,img }) => {
   const image = [
     "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/ddp/branding/mba-macquarie/thumbnail.jpg?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=204&fit=crop&q=50",
     "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/ddp/branding/bachelor-of-science-computer-science-bits/2c1c9800-93b0-48df-b278-a5246da9e086.jpg?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=204&q=50&fit=crop",
     "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/ddp/branding/mads-umich/thumbnail.jpg?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=204&q=50&fit=crop",
     "https://cdn.dribbble.com/users/1141617/screenshots/20111093/media/f5852b7b0c7d5831f0081fce75bd1641.jpg?compress=1&resize=1000x750&vertical=center",
+  
   ];
   const length = image.length;
   const miniimg =
@@ -31,7 +36,7 @@ const Card = ({ course, title, category, description, _id,img }) => {
         _hover={{ boxShadow: "2xl", cursor: "pointer" }}
       >
         <Image
-          src={`${assets}/Aaa.png`}
+          src={img || image[Math.floor(Math.random() * length)]}
           alt={title}
           objectFit="cover"
           h='150px'
