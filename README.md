@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Elearning-Platform-Using-MERN
 Software Engineering Course Project
 
@@ -107,3 +108,6 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+=======
+# MERN
+>>>>>>> d6bb263565d3ea9bd3c29d4a60c562edcefb75fd
